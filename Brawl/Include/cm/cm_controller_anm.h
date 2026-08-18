@@ -6,7 +6,10 @@
 #include <types.h>
 
 class cmAnimationController : public gfCameraController {
-    char _8[28];
+    char _8[4];
+    nw4r::g3d::G3dObj* unkC;
+    nw4r::g3d::G3dObj* unk10;
+    char _14[16];
 
 public:
     virtual void update(float);
