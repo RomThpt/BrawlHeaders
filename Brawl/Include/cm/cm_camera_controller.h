@@ -67,5 +67,8 @@ public:
     void setCameraRange(Rect2D*);
     gfCameraController* getCameraController(Kind kind);
     static CameraController* getInstance();
+
+private:
+    static CameraController* s_instance;
 };
 static_assert(sizeof(CameraController) == 420, "Class is wrong size!");
