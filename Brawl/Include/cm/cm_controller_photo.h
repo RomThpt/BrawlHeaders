@@ -5,6 +5,9 @@
 #include <ut/ut_list.h>
 
 class cmPhotoController : public gfCameraController {
+    char _8[0xA4];
+    utList m_callbacks;
+
 public:
     void addCallBack(utListNode* cb);
     void removeCallBack(utListNode* cb);
