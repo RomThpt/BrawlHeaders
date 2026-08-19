@@ -14,7 +14,14 @@ public:
 
 private:
     class WindowSetting {
-        char _0[0x48];
+    public:
+        char _0[0x24];
+        float m_hSpace;
+        float m_wScale;
+        float m_wScale2;
+        float m_hScale;
+        float m_hScale2;
+        char _38[0x10];
     };
     static_assert(sizeof(WindowSetting) == 0x48, "Class is wrong size!");
 
@@ -30,7 +37,7 @@ private:
     char _2[2];
     void* m_msgData;
     Message* m_message;
-    char _12[4];
+    WindowSetting* m_windowSettings;
     u32 m_numMsgs;
     HeapType m_heapType;
     int m_24;
