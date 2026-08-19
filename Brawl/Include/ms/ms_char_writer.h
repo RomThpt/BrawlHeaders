@@ -64,6 +64,8 @@ namespace ms {
         void SetCursorX(float x);
         void SetCursorY(float y);
         void SetCursorZ(float z);
+        void MoveCursorX(float x);
+        void MoveCursorY(float y);
         void SetScale(float x, float y);
         void SetScale(float scale);
         // Text outline color.
