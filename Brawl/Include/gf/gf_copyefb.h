@@ -30,5 +30,8 @@ public:
     bool isValid(int index);
     GXTexObj* getCopyEFBTex(int index);
     static gfCopyEFBMgr* getInstance();
+
+private:
+    static gfCopyEFBMgr* s_instance;
 };
 static_assert(sizeof(gfCopyEFBMgr) == 112, "Class is wrong size!");

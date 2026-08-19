@@ -46,5 +46,8 @@ public:
 
     gfScene* searchScene(const char* sceneName);
     static gfSceneManager* getInstance();
+
+private:
+    static gfSceneManager* s_instance;
 };
 static_assert(sizeof(gfSceneManager) == 800, "Class is wrong size!");
