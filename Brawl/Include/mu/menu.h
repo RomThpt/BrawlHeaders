@@ -231,6 +231,8 @@ public:
     static int exchangeGmCharacterKind2Something(int id);
     static void startRumbleController(int controller, int rumbleStrength, int rumbleSetting);
     static int exchangeMuSelchkind2MuStockchkind(int id);
+    static int exchangeMuSelchkind2GmCharacterKind(int id, int, int);
+    static int exchangeMuSelchkind2MuStockchkind(int id, int, int);
     static const char* exchangeMuStockchkind2MuCharName(int id);
     static int getStockFrameID(int id);
     static int getFighterColorFileNo(int charKind, int costumeID);
