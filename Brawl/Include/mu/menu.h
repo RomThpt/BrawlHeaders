@@ -222,8 +222,9 @@ public:
     virtual s32 exit();
     virtual void init();
 
-    static void loadMenuSound();
+    static int loadMenuSound();
     static bool isLoadFinishMenuSound();
+    static void freeMenuSound(int, int, int);
     static int exchangeSelchkind2SelCharVoice(int id);
     static int exchangeSelCharVoice2SelCharVoiceLengthE(int id);
     static int exchangeSelCharVoice2SelCharVoiceLengthJ(int id);
