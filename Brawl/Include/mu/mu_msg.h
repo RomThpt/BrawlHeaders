@@ -15,7 +15,15 @@ public:
 private:
     class WindowSetting {
     public:
-        char _0[0x24];
+        u32 m_isVisible : 1;
+        u32 m_alignMode : 2;
+        u32 : 29;
+        char _4[0x10];
+        u8 m_colorR;
+        u8 m_colorG;
+        u8 m_colorB;
+        u8 m_colorA;
+        char _18[0xC];
         float m_hSpace;
         float m_wScale;
         float m_wScale2;
