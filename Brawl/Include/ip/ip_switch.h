@@ -17,6 +17,7 @@ public:
     ipKeyRecorder* m_keyRecorder;
     char _28[12];
 
+    ipSwitch();
     static ipSwitch* getInstance();
     bool getPadStatus(s32 p1, ipPadStatus& p2);
 };
