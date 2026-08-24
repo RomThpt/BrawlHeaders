@@ -49,5 +49,8 @@ public:
     Enemy* getEnemyPtrFromId(int createId);
     Entry<emArchive>* getEntryPreloadArchivePtrFromId(int createId);
     static emManager* getInstance();
+
+private:
+    static emManager* s_instance;
 };
 static_assert(sizeof(emManager) == 32, "Class is wrong size!");

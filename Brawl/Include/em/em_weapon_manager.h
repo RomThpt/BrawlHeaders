@@ -22,5 +22,8 @@ public:
     static void create();
     static void remove();
     static emWeaponManager* getInstance();
+
+private:
+    static emWeaponManager* s_instance;
 };
 static_assert(sizeof(emWeaponManager) == 0x298, "Class is wrong size!");
