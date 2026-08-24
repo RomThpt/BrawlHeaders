@@ -238,6 +238,11 @@ public:
     static int getStockFrameID(int id);
     static int getFighterColorFileNo(int charKind, int costumeID);
     static int findCharTeamColorNo(int charKind, int teamColor, int teamSet);
+    static int exchangeMuCharKindToGmCharacterKind(int, int, int);
+    static int exchangeMuCharKindToMuStockchkind(int, int, int);
+    static int exchangeMuSelchkindToMuCharKind(int, int, int);
+    static int exchangeMuStageKindToGmHideStageKind(int, int, int);
+    static int getInfoMsgID(int, int, int);
 
     muMenu(const char* name) : gfScene(name) { }
 };
